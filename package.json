@@ -1,0 +1,49 @@
+{
+  "name": "utility",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "tsc-check": "tsc --noEmit",
+    "lint": "prettier --check . && eslint src --ignore-path .gitignore",
+    "lint:fix": "prettier --write . && eslint src --fix --ignore-path .gitignore",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vidga1/Utility.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vidga1/Utility/issues"
+  },
+  "homepage": "https://github.com/Vidga1/Utility#readme",
+  "devDependencies": {
+    "@babel/core": "7.23.0",
+    "@babel/preset-env": "7.22.20",
+    "@babel/preset-typescript": "^7.23.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "8.50.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-import": "2.28.1",
+    "husky": "8.0.3",
+    "lint-staged": "14.0.1",
+    "prettier": "3.0.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{css,md}": "prettier --write",
+    "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.12.1",
+    "codecov": "3.8.3",
+    "core-js": "3.32.2",
+    "regenerator-runtime": "0.14.0",
+    "typescript": "^5.2.2"
+  }
+}
